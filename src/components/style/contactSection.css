@@ -1,0 +1,106 @@
+.contact {
+  padding: 3rem;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+}
+
+.contact h2{
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.contact-buttons {
+  margin-bottom: 85px;
+}
+
+.contact-buttons .btn {
+  width: 267px;
+  height: 61px;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact .btn-primary {
+  background-color: #9DFF50;
+  color: #000;
+}
+
+.contact .btn-secondary {
+  background-color: #242623;
+  color: #ffffff;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 24px; 
+  row-gap: 32px; 
+  text-align: center;
+  column-count: 3; 
+}
+
+.contact-items  {
+  background-color: #000000;
+  position: relative;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 20px; 
+}
+
+.contact-items .head{
+  font-size: 18px;
+}
+
+.contact-items .description{
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .contact-buttons .btn {
+    width: 167px;
+    height: 61px;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .contact-buttons {
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1px;
+    text-align: center; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .contact .btn-primary {
+    font-size: 13px;
+  }
+  
+  .contact .btn-secondary {
+    font-size: 13px;
+  }
+
+  .contact-info {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 32px; 
+    text-align: center;
+  }
+  .contact-items .description{
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+  .contact {
+    padding: 2rem;
+  }
+}
